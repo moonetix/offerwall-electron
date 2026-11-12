@@ -1,0 +1,18 @@
+:root { color-scheme: light dark; --accent: #004abb; --on-accent: #ffffff; --muted: #5b6270; --bg: #ffffff; --fg: #12161f; }
+@media (prefers-color-scheme: dark) { :root { --accent: #8fb3ff; --on-accent: #0b1220; --muted: #a7adba; --bg: #14171d; --fg: #e8eaee; } }
+[hidden] { display: none !important; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, sans-serif; }
+main { max-width: 420px; margin: 0 auto; padding: 24px; }
+h1 { font-size: 20px; margin: 0 0 4px; }
+h2 { font-size: 16px; margin: 24px 0 8px; }
+.muted { color: var(--muted); font-size: 13px; }
+.balance { font-size: 28px; font-weight: 600; margin: 0 0 16px; }
+form { display: grid; gap: 10px; }
+label { display: grid; gap: 4px; font-size: 13px; }
+label.check { display: flex; gap: 8px; align-items: center; }
+input[type=email], input[type=password] { padding: 8px 10px; font: inherit; }
+button { padding: 10px 14px; font: inherit; border-radius: 6px; border: 0; background: var(--accent); color: var(--on-accent); cursor: pointer; }
+button[disabled] { opacity: 0.6; cursor: default; }
+button.link { background: none; color: var(--accent); padding: 0; margin-top: 12px; text-decoration: underline; }
+#earn { width: 100%; }

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Earn Points Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Earn Points Example</h1>
+    <p class="muted">Your app's own features go here. They work without an account.</p>
+
+    <section id="signin-section" hidden>
+      <h2 id="form-title">Sign in</h2>
+      <form id="signin">
+        <label>Email <input name="email" type="email" autocomplete="email" required></label>
+        <label>Password <input name="password" type="password" autocomplete="current-password" minlength="8" required></label>
+        <label id="age-row" class="check" hidden><input name="over16" type="checkbox"> I am 16 or older</label>
+        <button type="submit" id="submit">Sign in</button>
+        <button type="button" id="switch" class="link">Create an account</button>
+      </form>
+    </section>
+
+    <section id="earn-section" hidden>
+      <h2>Rewards</h2>
+      <p id="balance" class="balance"></p>
+      <button id="earn">Earn points</button>
+      <button type="button" id="signout" class="link">Sign out</button>
+    </section>
+
+    <p id="note" class="muted">Rewards come from third-party offers by Moonetix. 16+ only. Offers depend on your country and device, and VPNs and proxies are not supported. Some rewards arrive after a review.</p>
+  </main>
+  <script src="renderer.js"></script>
+</body>
+</html>
