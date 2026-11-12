@@ -1,0 +1,22 @@
+{
+    "app_id": "demoapp0000000000000001",
+    "postback_key": "test_postback_key_not_secret",
+    "link_salt": "test_link_salt_not_secret",
+    "postbacks": {
+        "credit_150": "http://localhost/moonetix/postback?user=1&tx=tx_1001&event=e1&status=1&reward=150&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=b3a76d77bf86fb7573a99997b423ab293fce50261f6898949000da23a32af1a4",
+        "reverse_150": "http://localhost/moonetix/postback?user=1&tx=tx_1001&event=e1&status=2&reward=150&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=67417063a68d0f4146d884fde590f9060b5ce9a5a6f3ec06d8cdda4c42007e7b",
+        "credit_decimal": "http://localhost/moonetix/postback?user=1&tx=tx_1002&event=e1&status=1&reward=0.75&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=6df82ef311ed39029938770468348e70240f59fa4694572e9c7abe3a464c7e0b",
+        "credit_five_decimals": "http://localhost/moonetix/postback?user=1&tx=tx_1003&event=e1&status=1&reward=1.23456&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=72ebdd1c146ebb82cb1b6ad22391fa1882a7f23dcdd60c8669c4bd93f0556109",
+        "credit_user2": "http://localhost/moonetix/postback?user=2&tx=tx_2001&event=e1&status=1&reward=40&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=3df1a709c3890f2b63ddecbc5852b0fae1f105c83e7961cb9114b1d9c48bda92",
+        "reverse_other_user": "http://localhost/moonetix/postback?user=2&tx=tx_1002&event=e1&status=2&reward=0.75&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=9f9a147349ea40d92796bb8fc2351d68cc8508fe3ed47f2025a61b99e4ede807",
+        "reverse_never_credited": "http://localhost/moonetix/postback?user=1&tx=test_9999&event=e1&status=2&reward=25&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=e0dec617dc4a66db637c14d0f32b544027f48afbe596918746556d2b3539d6ea",
+        "credit_test_user": "http://localhost/moonetix/postback?user=test_user&tx=test_abc&event=e1&status=1&reward=10&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=9c2df570e9a7e121df6c558284517c6ef11c37b6ea5acad4a1a15e8c39733a96",
+        "credit_missing_account": "http://localhost/moonetix/postback?user=999&tx=tx_3001&event=e1&status=1&reward=10&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=a5ef1925b2e45e72d02be3b911d196bf108b3dda7fcafec1ea7b1cd1ead46b28",
+        "credit_wrong_key": "http://localhost/moonetix/postback?user=1&tx=tx_4001&event=e1&status=1&reward=99&payout=0.5&offer=Bigo%20Live%20%26%20%22Friends%22&hash=b998fd7e56f6fbf0c8a10dfc178bc518b0510909a9b307ad6905ee4e5df3958e"
+    },
+    "walls": {
+        "1": "https://wall.moonetix.com/demoapp0000000000000001?user_id=1&hash=2fb8d67fb06464556edfd149884615a52b05786aa2321e25d76c7b89147e0eb7",
+        "2": "https://wall.moonetix.com/demoapp0000000000000001?user_id=2&hash=b6da75ce2976af7229f2c180d8a6eb2b6501188e1030e277720feb43294a8d16",
+        "42": "https://wall.moonetix.com/demoapp0000000000000001?user_id=42&hash=df356f85e280e430f312ee0f84108804c494c3f810cfec62a288e1c08b702e33"
+    }
+}
