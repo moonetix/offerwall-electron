@@ -1,0 +1,15 @@
+{
+  "name": "offerwall-example-server",
+  "version": "1.0.0",
+  "description": "Token and postback server for the Moonetix offerwall example app.",
+  "private": true,
+  "license": "MIT",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --env-file=.env --disable-warning=ExperimentalWarning src/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test"
+  }
+}
