@@ -1,0 +1,20 @@
+{
+  "name": "offerwall-electron",
+  "version": "1.0.0",
+  "description": "Electron app with a Moonetix offerwall: server-signed link, shell.openExternal or a locked-down window.",
+  "private": true,
+  "license": "MIT",
+  "main": "app/main.js",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "server": "npm --prefix server start",
+    "test": "npm --prefix server test",
+    "test:smoke": "electron test/smoke.js"
+  },
+  "devDependencies": {
+    "electron": "45.3.0"
+  }
+}
