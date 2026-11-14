@@ -5,13 +5,12 @@
 [![CI](https://github.com/moonetix/offerwall-electron/actions/workflows/ci.yml/badge.svg)](https://github.com/moonetix/offerwall-electron/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Docs](https://img.shields.io/badge/docs-offerwall%20link-004ABB)](https://docs.moonetix.com/offerwall-link)
-[![Get keys](https://img.shields.io/badge/get%20keys-moonetix.com-004ABB)](https://moonetix.com/register?from=github-offerwall-electron)
 [![Electron 45.3.0](https://img.shields.io/badge/electron-45.3.0-47848F)](https://moonetix.com/academy/integrations/electron-offerwall)
 [![Server: zero dependencies](https://img.shields.io/badge/server-zero%20dependencies-brightgreen)](https://moonetix.com/industries/apps)
 
 An Electron app in `app/` and a small Node.js server in `server/` for the [Moonetix](https://moonetix.com) offerwall. Moonetix is an affiliate network: your users earn your own points by completing offers, and you earn per completed offer. Electron ships its JavaScript to every user, so the app holds no key: it asks your server for a signed link and only reads the balance back.
 
-> **Get your App ID and keys: sign up free at https://moonetix.com/register?from=github-offerwall-electron**
+> To run it you need your Moonetix App ID and keys: see [Get started](#get-started).
 
 ## Why it is built this way
 
@@ -187,7 +186,7 @@ Desktop users see only desktop offers for their country, which can be fewer than
 
 ## Get started
 
-**Get your App ID and keys: sign up free at https://moonetix.com/register?from=github-offerwall-electron**
+Get your App ID and keys: sign up free at https://moonetix.com/register?from=github-offerwall-electron
 
 Every publisher application is reviewed by hand. Once you are approved, add your app, set your points name and rate, and paste the keys into `server/.env`.
 
