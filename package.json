@@ -15,6 +15,6 @@
     "test:smoke": "electron test/smoke.js"
   },
   "devDependencies": {
-    "electron": "45.3.0"
+    "electron": "45.3.3"
   }
 }
